@@ -1,0 +1,36 @@
+Pontos positivos: 
+
++ O projeto está muito próximo do que deve ser implementado. 
++ As classes apresentadas parecem ser suficientes para lidar com a resolução do
+problema
+
+
+
+
+Pontos negativos: 
+
+- As associações Republica --> Residente, Republica --> Pagamentos e Despesa -->
+  Data estão invertidas. (-20%)
+
+
+
+
+
+Dúvidas: 
+
+? Qual a diferença entre Pagamento e Despesa? 
+
+
+
+
+Comentários: 
+
+O trabalho está muito bom e muito bem encaminhado para o seu final. Simples e
+claro, ele consegue tratar todos os requisitos da aplicação a ser desenvolvida.
+Utilizem herança para diferenciar os tipos de cálculos de divisão de despesas. 
+
+
+
+
+Nota: 
+80/100 pontos.
