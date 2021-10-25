@@ -121,7 +121,7 @@ public class Republica {
 		String file_residentes = "data/residentes/alunos.txt";
 
 
-			String file_depesas = String.format("data/despesas/despesas_%d_%d.txt",mes,ano);
+			String file_depesas = String.format("data/despesas/despesas_%02d_%d.txt",mes,ano);
 
 			//Verifica se existe o arquivo do ano e mês e se existir cada linha do arquivo e faz o somatório das despesas
 		    float valor_total = 0;
@@ -245,7 +245,7 @@ public class Republica {
 		String file_residentes = "data/residentes/alunos.txt";
 
 
-			String file_depesas = String.format("data/despesas/despesas_%d_%d.txt",mes,ano);
+			String file_depesas = String.format("data/despesas/despesas_%02d_%d.txt",mes,ano);
 
 			//Verifica se existe o arquivo do ano e mês e se existir cada linha do arquivo e faz o somatório das despesas
 		    float valor_total = 0;
