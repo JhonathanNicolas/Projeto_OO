@@ -3,6 +3,8 @@ import republicaExceptions.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
+//Crianção da classe do Residente 
 public class Residente {
 
 	String nome;
@@ -15,14 +17,14 @@ public class Residente {
         this.setRendimentos(rendimentos);
     }
 
-    public void setNome(String nome) throws DadosPessoaisIncompletosException {
+    public void setNome(String nome) throws DadosPessoaisIncompletosException { // Deve setar um valor válido para o método nome
     	if ( (nome.length() < 1) || (nome.length() > 30) )
     		throw new DadosPessoaisIncompletosException("Nome invalido. Minimo 1 caracter, maximo 30 caracteres"); 
     	else
     		this.nome = nome;
     }
     
-    public void setEmail(String email) throws DadosPessoaisIncompletosException{ 
+    public void setEmail(String email) throws DadosPessoaisIncompletosException{ // Deve setar um valor válido para o método email
     	
     	String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
         Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
@@ -34,20 +36,20 @@ public class Residente {
     		throw new DadosPessoaisIncompletosException("email invalido");   
     }
 
-    public void setRendimentos(float rendimentos) throws RendimentoInvalidoException { 
+    public void setRendimentos(float rendimentos) throws RendimentoInvalidoException { // Deve setar um valor válido para o método Rendimentos
     	if (rendimentos < 0)
     		throw new RendimentoInvalidoException("Insira um rendimento valido.");
     	else
     	this.rendimentos = rendimentos;
     }
 
-	public String getNome() {
+	public String getNome() { // Deve retornar o valor do método Nome
 		return nome;
     }
-	public String getEmail() { 
+	public String getEmail() { // Deve retornar o valor do método Email
 	    return email;
 	}
-	public float getRendimentos() { 
+	public float getRendimentos() { // Deve retornar o valor do método Rendimentos
 	    return rendimentos;
 	}
 	}

@@ -19,7 +19,7 @@ public class Despesa {
         return valor;
     }
 
-    public void setValor(float valor) throws ValorNaoInformadoException{ // Deve setar o valor da metodo valor
+    public void setValor(float valor) throws ValorNaoInformadoException{ // Deve setar o valor do metodo valor
       if (valor == 0.0f) {
     	  throw new ValorNaoInformadoException("Erro: Valor da despesa não informado!");
       } else {

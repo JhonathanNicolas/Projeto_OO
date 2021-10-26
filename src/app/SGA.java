@@ -34,7 +34,8 @@ public class SGA {
 		return data;
 	}
 	
-
+    //Imprime a tabela referente aos pagamentos de cada aluno
+	
 	private static void imprimirTabela( Pagamentos pagmentos) {
 		
 		
@@ -54,7 +55,7 @@ public class SGA {
 			
 		{
 			String valor = String.format("R$ %.2f\n",pagmentos.getListaPagamentos()[i]);
-			model.addRow(new Object[]{pagmentos.getListaResidentes()[i].getNome(), pagmentos.getListaResidentes()[i].getNome(),valor});
+			model.addRow(new Object[]{pagmentos.getListaResidentes()[i].getNome(), pagmentos.getListaResidentes()[i].getEmail(),valor});
 			valor_total = valor_total + pagmentos.getListaPagamentos()[i];
 		}
 		
@@ -68,6 +69,7 @@ public class SGA {
 	}
 	
 	
+	//Função q recebe um valor válido
 	
 	private static float inputValor() {
 		float valor;
@@ -82,6 +84,8 @@ public class SGA {
 		}
 		return valor;
 	}
+	
+	//Cria a categoria
 	
 	private static Categoria createCategoria() {
 		Categoria categoria;
@@ -115,7 +119,7 @@ public class SGA {
 		
 	}
 	
-	
+	//Escolha de opções da categoria
 	private static Categoria inputCategoria() {
 		Categoria categoria;
 		int categoriaEscolhida;
@@ -148,7 +152,7 @@ public class SGA {
 	
 	
 	
-	
+	//Main
 	public static void main (String[] args) throws Exception {
 		int opcao = 0;
 		
@@ -220,7 +224,7 @@ public class SGA {
 				break;
 	
 			case 4:
-				
+				//Escolha de modelo de pagamento
 				String strOpcao_pag = JOptionPane.showInputDialog("Escolha uma opção de pagamento: \n"
 						+ "1 - Pagamento Igualitário \n"
 						+ "2 - Pagamento Proporcional\n"

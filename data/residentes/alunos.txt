@@ -1,3 +1,4 @@
 
 João;joao@gmail.com;3500.00
 Maria;maria@email.com;1200.00
+Davi;davi@davi.com;3100.00

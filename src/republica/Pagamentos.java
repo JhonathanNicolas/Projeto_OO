@@ -12,7 +12,7 @@ public Residente[] getListaResidentes() {
     return listaResidentes;
 }
 
-public void setListaResidentes(Residente[] listaResidentes) throws ListadeResidentesVaziaException{
+public void setListaResidentes(Residente[] listaResidentes) throws ListadeResidentesVaziaException{ // Deve setar o metodo de Lista de residentes
 	if (listaResidentes.length <= 0)
 	{
 		throw  new ListadeResidentesVaziaException("Não há residentes. Favor primeiro cadastre residentes");
