@@ -53,3 +53,48 @@ Link para a UML editável:
 >**RendimentoInvalidoException**: Trata casos quando é informado um valor inválido de rendimento.
 
 >**DadosPessoaisIncompletosException**: Trata casos quando não é informado algum dos dados pessoais do residente.
+
+## Funcionamento
+>**Opção 1**: Ao rodar o programa, é inicializada uma interface com 5 opções de entrada, seguidas logo abaixo por uma tecla para confirmar e outra para cancelar. Na opção 1, será possível fazer o cadastro do Residente, coletando alguns dados como Nome, E-mail e o Valor.
+
+>![](imgs\1.PNG)
+>![](imgs\2.PNG)
+>![](imgs\3.PNG)
+>![](imgs\8.PNG)
+
+>**Opção 2**: Na opção 2 é possível fazer o cadastro das despesas, que para ser completado necessita de dados como Mês de vencimento, Ano, Valor e o Credor da despesa. Em seguida já aparecerá uma lista das categorias para ser selecionada e ligá-la a despesa. Caso queira criar uma nova, também é possível, tendo também uma opção para subcategoria.
+
+>![](imgs\5.PNG)
+>![](imgs\6.PNG)
+>![](imgs\7.PNG)
+>![](imgs\8.PNG)
+>![](imgs\9.PNG)
+>![](imgs\10.PNG)
+>![](imgs\11.PNG)
+>![](imgs\12.PNG)
+
+>**Opção 3**: A opção 3 é própria para cadastrar uma categoria separadamente, funcionando da mesma forma do cadastro anterior, tendo o cadastramento da categoria e a opção da subcategoria. 
+
+>![](imgs\13.PNG)
+>![](imgs\14.PNG)
+>![](imgs\15.PNG)
+
+>**Opção 4**: Na opção 4 os pagamentos são realizados. Logo após avançar, terá como opções o pagamento igualitário ou proporcional dos residentes, seguidas de uma opção para retornar a tela inicial. Nas duas primeiras opções, ao avançar será necessário digitar o Mês e Ano de vencimento da despesa questão. Por fim, aparecerá uma interface indicando os dados cadastrados do residente e a o valor a pagar separadamente por residente da despesa selecionada.
+
+>![](imgs\16.PNG)
+>![](imgs\17.PNG)
+>![](imgs\18.PNG)
+>![](imgs\19.PNG)
+>![](imgs\20.PNG)
+>![](imgs\21.PNG)
+>![](imgs\22.PNG)
+>![](imgs\23.PNG)
+
+>**Opção 0**: A opção zero encerra o programa.
+
+>![](C:\Users\genil\Desktop\A.T\Área de Trabalho\Arquivos Salvos Formatação SSD\Formação\UnB\UnB Aulas\2 Semestre\OO\Projeto_OO-master\imgs\24.PNG)
+
+## Seção de testes
+>**Testes**: Foi feita uma sessão apenas para testes que não deve ser considerada!
+
+>![](C:\Users\genil\Desktop\A.T\Área de Trabalho\Arquivos Salvos Formatação SSD\Formação\UnB\UnB Aulas\2 Semestre\OO\Projeto_OO-master\imgs\25.PNG)
