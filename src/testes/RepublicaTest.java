@@ -1,18 +1,20 @@
 package testes;
 import republica.Republica;
+
+// Static block
 import republica.Pagamentos;
 class  DemoRepublica
 {
 private static Republica rep;
-static                  //static block
+static                  
 {
 
 
+// Static method
 }
-public static void main(String args[]) throws Exception  //static method
+public static void main(String args[]) throws Exception  
 {
-	//Testando criação da classe
-
+	 // Testando criação da classe
 	 rep = new Republica();
 
 	 // Testando pagamentos igualitario

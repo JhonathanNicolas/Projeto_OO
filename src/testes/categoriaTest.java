@@ -2,26 +2,28 @@ package testes;
 import republica.Subcategoria;
 import republica.Categoria;
 
+// Static block
 class  categoriaTest
 {
 private static Subcategoria luz;
 private static Subcategoria internet;
 private static Categoria residencia;
-static                  //static block
+static                  
 {
 
 
 
 
 }
-public static void main(String args[]) throws Exception  //static method
+// Static method
+public static void main(String args[]) throws Exception  
 {
-	//criação da classe Subcategoria
+	 // Criação da classe Subcategoria
 	 luz = new Subcategoria("Conta de luz");
 	 internet = new Subcategoria("Conta de internet");
 
 	 
-	 //Testando criação da classe Categoria
+	 // Testando criação da classe Categoria
 	 residencia = new Categoria("Residência", luz);
 	 System.out.println(residencia.getDescricao());
 	 System.out.println(residencia.getSubcategoria().getDescricao());
@@ -35,7 +37,7 @@ public static void main(String args[]) throws Exception  //static method
 	System.out.println(residencia.getSubcategoria().getDescricao());
 
 
-	//Testando execeção
+	// Testando execeção
 	residencia.setDescricao("");
 	 
 }

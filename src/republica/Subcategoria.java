@@ -8,12 +8,14 @@ public class Subcategoria {
 	        this.setDescricao(descricao);
 	    }
 
-	    public String getDescricao() { // Deve retornar o valor da metodo descricaoSubcategoria
+	    // Deve retornar o valor da metodo descricaoSubcategoria
+	    public String getDescricao() { 
 	    	
 	        return descricaoSubcategoria;
 	    }
 
-	    public void setDescricao(String descricao) throws DescricaoNaoInformadaException { // Deve setar o valor da metodo descricaoSubcategoria
+	    // Deve setar o valor da metodo descricaoSubcategoria
+	    public void setDescricao(String descricao) throws DescricaoNaoInformadaException { 
 		  if (descricao.length() <  1)
 	    	  {
 			  throw new DescricaoNaoInformadaException("O tamanho da decrição deve ser maior ou igual a 1 caractere");

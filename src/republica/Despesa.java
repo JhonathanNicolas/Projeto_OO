@@ -15,11 +15,13 @@ public class Despesa {
         this.setCategoria (categoria);
     }
 
-    public float getValor() { // Deve retornar o valor da metodo valor
+	// Deve retornar o valor do metodo valor
+    public float getValor() { 
         return valor;
     }
 
-    public void setValor(float valor) throws ValorNaoInformadoException{ // Deve setar o valor do metodo valor
+    // Deve setar o valor do metodo valor
+    public void setValor(float valor) throws ValorNaoInformadoException{ 
       if (valor == 0.0f) {
     	  throw new ValorNaoInformadoException("Erro: Valor da despesa não informado!");
       } else {
@@ -27,22 +29,27 @@ public class Despesa {
       }
     }
 
-    public Data getData() { // Deve retornar o valor da metodo data
+    // Deve retornar o valor da metodo data
+    public Data getData() { 
     	return data;
     }
 
-    public void setData(Data data) throws DataNaoInformadaException { // Deve setar o valor da metodo data
+    // Deve setar o valor da metodo data
+    public void setData(Data data) throws DataNaoInformadaException { 
     	if (data == null) {
     		throw new DataNaoInformadaException("Erro: Data da despesa não informada!");
     	}else {
     		this.data = data;
     	}
 	}
-    public String getDescricao() { // Deve retornar o valor da metodo descri��o
+    
+    // Deve retornar o valor da metodo descri��o
+    public String getDescricao() { 
         return descricao;
     }
 
-    public void setDescricao(String descricao) throws DescricaoNaoInformadaException { // Deve setar o valor da metodo descri��o
+    // Deve setar o valor da metodo descri��o
+    public void setDescricao(String descricao) throws DescricaoNaoInformadaException { 
     	if (descricao == null || descricao == "") {
     		throw new DescricaoNaoInformadaException("Erro: Descrição da categoria não informada!");
     	} else {
@@ -50,11 +57,13 @@ public class Despesa {
     	}
     }
 
-    public Categoria getCategoria() { // Deve retornar o valor da metodo categoria
+    // Deve retornar o valor da metodo categoria
+    public Categoria getCategoria() { 
     	return categoria;
     }
 
-    public void setCategoria(Categoria categoria) throws CategoriaNaoInformadaException { // Deve setar o valor da metodo categoria
+    // Deve setar o valor da metodo categoria
+    public void setCategoria(Categoria categoria) throws CategoriaNaoInformadaException { 
     	if (categoria == null) {
     		throw new CategoriaNaoInformadaException("Erro: Categoria da despesa não informada!");
     	} else {

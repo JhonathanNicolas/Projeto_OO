@@ -11,24 +11,29 @@ public class Data {
         this.setAno(ano);
     }
 
-    public void setMes(int mes) throws DataInvalidaException { //Deve setar um valor valido para o metedo mes
+    // Deve setar um valor valido para o metedo mês
+    public void setMes(int mes) throws DataInvalidaException { 
     	if(mes <= 0 || mes > 12)
     		throw new DataInvalidaException("Insira um mes valido");
     	else
     		this.mes = mes;
     }
 
-    public void setAno(int ano) throws DataInvalidaException { // Deve setar um valor valido para o metodo ano
-    	if(ano < 1000 || ano >= 10000)
+    // Deve setar um valor valido para o metodo ano
+    public void setAno(int ano) throws DataInvalidaException { 
+    	if(ano < 1000 || ano >= 10000)	
     		throw new DataInvalidaException("Insira um ano valido");	
     	else	
     		this.ano = ano;
     }
     
-    public int getMes() { // Deve retornar o valor do metodo mes
+    // Deve retornar o valor do metodo mês
+    public int getMes() { 
         return mes;
     }
-    public int getAno() { // Deve retornar o valor do metedo ano
+    
+    // Deve retornar o valor do metedo ano
+    public int getAno() { 
         return ano;
     }
 }

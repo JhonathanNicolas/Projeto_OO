@@ -2,3 +2,6 @@
 João;joao@gmail.com;3500.00
 Maria;maria@email.com;1200.00
 Davi;davi@davi.com;3100.00
+Genilson;Genilson@gmail.com;200.00
+Andre;Andre@gmail.com;3000.00
+Paulo;Paulo@gmail.com;200.00

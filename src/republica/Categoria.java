@@ -16,19 +16,23 @@ public class Categoria {
 		this.setSubcategoria(subcategoria);
 	}
 	
-    public Subcategoria getSubcategoria() { // Deve retornar o valor da metodo subcategoria
+	// Deve retornar o valor da metodo subcategoria
+    public Subcategoria getSubcategoria() { 
         return subcategoria;
     }
 
-    public void setSubcategoria(Subcategoria subcategoria) { // Deve setar o valor da metodo subcategoria
+    // Deve setar o valor da metodo subcategoria
+    public void setSubcategoria(Subcategoria subcategoria) { 
       this.subcategoria = subcategoria;
     }
 
-    public String getDescricao() { // Deve retornar o valor da metodo descricaoCategoria
+    // Deve retornar o valor da metodo descricaoCategoria
+    public String getDescricao() { 
     	return descricaoCategoria;
     }
 
-    public void setDescricao(String descricaoCategoria) throws DescricaoNaoInformadaException{ // Deve setar o valor da metodo descricaoCategoria
+    // Deve setar o valor da metodo descricaoCategoria
+    public void setDescricao(String descricaoCategoria) throws DescricaoNaoInformadaException{ 
     	if (descricaoCategoria == null || descricaoCategoria == "") {
     		throw new DescricaoNaoInformadaException("Erro: Descrição da categoria não informada!");
     	} else {

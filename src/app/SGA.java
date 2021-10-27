@@ -34,8 +34,7 @@ public class SGA {
 		return data;
 	}
 	
-    //Imprime a tabela referente aos pagamentos de cada aluno
-	
+    // Imprime a tabela referente aos pagamentos de cada aluno
 	private static void imprimirTabela( Pagamentos pagmentos) {
 		
 		
@@ -69,8 +68,7 @@ public class SGA {
 	}
 	
 	
-	//Função q recebe um valor válido
-	
+	// Função q recebe um valor válido
 	private static float inputValor() {
 		float valor;
 		while(true) {
@@ -85,8 +83,7 @@ public class SGA {
 		return valor;
 	}
 	
-	//Cria a categoria
-	
+	// Cria a categoria
 	private static Categoria createCategoria() {
 		Categoria categoria;
 		Subcategoria subcategoria;
@@ -119,7 +116,7 @@ public class SGA {
 		
 	}
 	
-	//Escolha de opções da categoria
+	// Escolha de opções da categoria
 	private static Categoria inputCategoria() {
 		Categoria categoria;
 		int categoriaEscolhida;
@@ -152,7 +149,7 @@ public class SGA {
 	
 	
 	
-	//Main
+	// Main
 	public static void main (String[] args) throws Exception {
 		int opcao = 0;
 		
@@ -169,7 +166,8 @@ public class SGA {
 			Republica republica = new Republica();
 			switch (opcao) {
 			case 1:
-				//cadastrar residente
+				
+				// Cadastrar residente
 				Residente residente;
 				String nome;
 				String email;
@@ -191,7 +189,8 @@ public class SGA {
 
 				break;
 			case 2: 
-				//cadastrar despesa
+				
+				// Cadastrar despesa
 				float valor;
 				Data data;
 				Categoria categoria;
@@ -216,7 +215,8 @@ public class SGA {
 				break;
 
 			case 3: 
-				//cadastrar categoria
+				
+				// Cadastrar categoria
 				Categoria cat;
 				cat = createCategoria();
 				System.out.print(cat);
@@ -224,7 +224,8 @@ public class SGA {
 				break;
 	
 			case 4:
-				//Escolha de modelo de pagamento
+				
+				// Escolha de modelo de pagamento
 				String strOpcao_pag = JOptionPane.showInputDialog("Escolha uma opção de pagamento: \n"
 						+ "1 - Pagamento Igualitário \n"
 						+ "2 - Pagamento Proporcional\n"
@@ -271,12 +272,14 @@ public class SGA {
 
 				break;
 	
-			case 0: 
-				//sair do programa
+			case 0:
+				
+				// Sair do programa
 				break;
 
 			default:
-				//Opcao invalida
+				
+				// Opção invalida
 				break;
 			}
 			

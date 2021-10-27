@@ -1,27 +1,27 @@
 package testes;
 import republica.Subcategoria;
 
+// Static block
 class  DemoSubcategoria
 {
 private static Subcategoria luz;
-static                  //static block
+static                  
 {
 
-
+// Static method
 }
-public static void main(String args[]) throws Exception  //static method
+public static void main(String args[]) throws Exception  
 {
-	//Testando criação da classe
-
+	 // Testando criação da classe
 	 luz = new Subcategoria("Conta de luz");
 	 System.out.println(luz.getDescricao());
 
-	// Testando setar descrição
+	 // Testando setar descrição
 	 luz.setDescricao("agua");
 	 System.out.println(luz.getDescricao());
 
 
-	//Testando execeção
+	 // Testando execeção
 	 luz.setDescricao("");
 	 System.out.println(luz.getDescricao());
 }
