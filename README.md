@@ -57,7 +57,7 @@ Link para a UML editável:
 ## Funcionamento
 >**Opção 1**: Ao rodar o programa, é inicializada uma interface com 5 opções de entrada, seguidas logo abaixo por uma tecla para confirmar e outra para cancelar. Na opção 1, será possível fazer o cadastro do Residente, coletando alguns dados como Nome, E-mail e o Valor.
 
->![](imgs\1.PNG)
+>![](imgs/1.PNG)
 >![](imgs\2.PNG)
 >![](imgs\3.PNG)
 >![](imgs\8.PNG)
@@ -92,9 +92,9 @@ Link para a UML editável:
 
 >**Opção 0**: A opção zero encerra o programa.
 
->![](C:\Users\genil\Desktop\A.T\Área de Trabalho\Arquivos Salvos Formatação SSD\Formação\UnB\UnB Aulas\2 Semestre\OO\Projeto_OO-master\imgs\24.PNG)
+>![](imgs\24.PNG)
 
 ## Seção de testes
 >**Testes**: Foi feita uma sessão apenas para testes que não deve ser considerada!
 
->![](C:\Users\genil\Desktop\A.T\Área de Trabalho\Arquivos Salvos Formatação SSD\Formação\UnB\UnB Aulas\2 Semestre\OO\Projeto_OO-master\imgs\25.PNG)
+>![](imgs\25.PNG)
