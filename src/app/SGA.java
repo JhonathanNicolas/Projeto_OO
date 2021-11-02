@@ -1,5 +1,7 @@
 package app;
 import republica.*;
+import republicaExceptions.ValorNaoInformadoException;
+
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -22,8 +24,19 @@ public class SGA {
 		Data data;
 		int mes, ano;
 		while(true) {
+			
+			
+			try {
 			mes = Integer.parseInt(JOptionPane.showInputDialog("Digite o mês de vencimento da despesa"));
 			ano = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano de vencimento da despesa"));
+			}
+			catch(Throwable e)
+			{
+				mes = 0;
+				ano = 0;
+				System.exit(0);
+				
+			}
 			try {
 				data = new Data(mes, ano);
 				break;
@@ -133,7 +146,13 @@ public class SGA {
 		}
 		
 		while(true) {
-			categoriaEscolhida = Integer.parseInt(JOptionPane.showInputDialog(opcoesCategorias));
+			
+			categoriaEscolhida = 0;
+			try {
+			categoriaEscolhida = Integer.parseInt(JOptionPane.showInputDialog(opcoesCategorias));}
+			catch(Throwable e) {
+				System.exit(0);
+			}
 			if (categoriaEscolhida == -1) {
 				categoria = createCategoria();
 				categorias.add(categoria);
@@ -155,13 +174,26 @@ public class SGA {
 		
 		
 		do {
-			String strOpcao = JOptionPane.showInputDialog("Escolha uma opção: \n"
+		
+			String strOpcao = "";
+			try {
+			strOpcao = JOptionPane.showInputDialog("Escolha uma opção: \n"
 					+ "1 - Cadastrar residente \n"
 					+ "2 - Cadastrar despesa\n"
 					+ "3 - Cadastrar categoria\n"
 					+ "4 - Realizar pagamento\n"
 					+ "0 - Sair do programa");
 			opcao = Integer.parseInt(strOpcao);
+			}
+			catch(Throwable e)
+			{
+
+				System.exit(0);
+				
+			
+			}
+			
+			
 			
 			Republica republica = new Republica();
 			switch (opcao) {
@@ -207,8 +239,10 @@ public class SGA {
 						despesa = new Despesa(valor, data, descricao, categoria);
 						republica.addDespesa(despesa);
 						break;
-					} catch (Throwable e) {
-						JOptionPane.showMessageDialog(null, "Valor inválido, tente novamente");
+					} catch (ValorNaoInformadoException e) {
+						
+						System.exit(0);
+						
 					}
 				}
 				
@@ -230,8 +264,12 @@ public class SGA {
 						+ "1 - Pagamento Igualitário \n"
 						+ "2 - Pagamento Proporcional\n"
 						+ "0 - Voltar");
-				int opcao_pag = Integer.parseInt(strOpcao_pag);
-				
+				int opcao_pag = 0;
+				try {
+				opcao_pag = Integer.parseInt(strOpcao_pag);
+				}catch(Throwable e) {
+					System.exit(0);
+				}
 				switch(opcao_pag)
 				{
 
